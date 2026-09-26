@@ -1,0 +1,37 @@
+{
+  "name": "genpark-agent-multi-turn-eval-scorer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-turn autonomous agent trajectory evaluator measuring step redundancy, tool choice efficiency, and task completion scoring.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "agentic-evals",
+  "tags": [
+    "agent-eval",
+    "trajectory-scoring",
+    "step-efficiency",
+    "autonomous-benchmarking",
+    "multi-turn-eval"
+  ],
+  "inputs": {
+    "task_goal": {
+      "type": "string",
+      "default": "Clone repo, run tests, fix bug"
+    }
+  },
+  "outputs": {
+    "evaluation_id": {
+      "type": "string"
+    },
+    "trajectory_score": {
+      "type": "number"
+    },
+    "quality_rating": {
+      "type": "string"
+    },
+    "autonomous_goal_achieved": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
